@@ -5,7 +5,7 @@ www.dio.me
 - [Gleyson Sampaio](https://github.com/glysns)
 
 ## Exercício operadores
-Crie o programa chamado BancoTerminal.java para implementar o algorítmo conforme abaixo:
+Crie o programa chamado `BancoTerminal.java` para implementar o algorítmo conforme abaixo:
 
 O programa deverá simular uma operação de saque onde:
 
