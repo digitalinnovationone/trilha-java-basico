@@ -30,7 +30,7 @@ Vamos exercitar todo o conteúdo apresentado no módulo de Sintaxe codificando o
 
 3. Depois de todas as informações terem sido inseridas, o sistema deverá exibir a seguinte mensagem:
 
-*"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível em conta".*
+*"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível para saque".*
 
 Os campos em [ ] devem ser alterados pelas informações que forem inseridas pelos usuários.
 
