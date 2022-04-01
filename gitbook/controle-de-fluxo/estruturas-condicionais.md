@@ -48,7 +48,7 @@ public class ResultadoEscolar {
 ```
 
 {% hint style="success" %}
-Vale ressaltar aqui que no Java um bloco **`if/else`** as vezes necessita de adicionar um bloco de **`{ }`**se a lógica conter mais de uma linha.
+Vale ressaltar aqui que no Java em uma condição**`if/else`** as vezes necessitamos adicionar um bloco de **`{ }`**se a lógica conter mais de uma linha.
 {% endhint %}
 
 ## Condicionais encadeadas
@@ -223,7 +223,7 @@ public class PlanoOperadora {
 ```
 
 {% hint style="warning" %}
-Se optarem por usar **`switch`** / **`case`**, estudem um  pouco mais sobre os conceitos de **`break`** e **`default`**
+Se optarem por usar **`switch`** / **`case`**, estudem um  pouco mais sobre os conceitos de **`continue`**, **`break`** e **`default`**
 {% endhint %}
 
 &#x20;

@@ -79,7 +79,7 @@ Também usamos o controle de fluxo **`for`** para interagir sobre arrays e cole�
 // ExemploFor.java
 public class ExemploFor {
 public static void main(String[] args) {
-	String alunos[] = { "FELIPE", "JONAS", "FULIA", "MARCOS" };
+	String alunos[] = { "FELIPE", "JONAS", "JULIA", "MARCOS" };
 
 	for (int x=0; x<alunos.length; x++) {
 		System.out.println("O aluno no indice x=" + x + " é " + alunos[x]);
@@ -103,7 +103,7 @@ O uso do **`for / each`** está fortemente relacionado com um cenário onde cont
 // ExemploFor.java
 public class ExemploFor {
 public static void main(String[] args) {
-	String alunos [] =  {"FELIPE","JONAS","FULIA","MARCOS"};
+	String alunos [] =  {"FELIPE","JONAS","JULIA","MARCOS"};
 	
         //Forma abreviada
 	for(String aluno : alunos) {
@@ -181,24 +181,29 @@ while (expressão booleana de validação)
 
 ![](<../.gitbook/assets/image (14) (1).png>)
 
-Joãozinho recebeu R$ 50,00 de mesada e foi em uma loja de doces gastar toda mesada, logo, enquanto o valor dos doces não igualar a R$ 50,00 ele foi adicionando itens no carrinho.
+Joãozinho recebeu R$ 50,00 de mesada e foi em uma loja de doces gastar todo o seu dinheiro, logo, enquanto o valor dos doces não igualar a R$ 50,00 ele foi adicionando itens no carrinho.
 
 ```java
 // ExemploWhile.java
+import java.util.concurrent.ThreadLocalRandom;
 public class ExemploWhile {
 public static void main(String[] args) {
 	double mesada = 50.0;
-	while(mesada>0) {
-		Double valorDoce = valorAleatorio();
-		//if(valorDoce > mesada)
-			//valorDoce = mesada;
-		
-		System.out.println("Doce do valor: " + valorDoce + " Adicionado no carrinho");
-		mesada = mesada - valorDoce;
-	}
-	System.out.println(mesada);
-	System.out.println("Joãozinho gastou toda a sua mesada em doces");
+        while(mesada>0) {
+            Double valorDoce = valorAleatorio();
+            if(valorDoce > mesada)
+                valorDoce = mesada;
 
+            System.out.println("Doce do valor: " + valorDoce + " Adicionado no carrinho");
+            mesada = mesada - valorDoce;
+        }
+        System.out.println("Mesada:" + mesada);
+        System.out.println("Joãozinho gastou toda a sua mesada em doces");
+        
+        /*
+        * Não se preocupe quanto a formatação de valores
+        * Iremos explorar os recursos de formatação em breve !!
+        */
    }
    private static double valorAleatorio() {
 	return ThreadLocalRandom.current().nextDouble(2, 8);
@@ -231,6 +236,8 @@ Joãozinho resolveu ligar para o seu amigo dizendo que hoje se entupiu de comer 
 
 ```java
 // ExemploDoWhile.java
+
+import java.util.Random;
 public class ExemploDovWhile {
 public static void main(String[] args) {
 	public static void main(String[] args) {

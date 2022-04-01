@@ -25,9 +25,17 @@
 * [Conceito](controle-de-fluxo/conceito.md)
 * [Estruturas condicionais](controle-de-fluxo/estruturas-condicionais.md)
 * [Estruturas de repetição](controle-de-fluxo/estruturas-de-repeticao.md)
+* [Estruturas excepcionais](controle-de-fluxo/estruturas-excepcionais.md)
 
 ## Programação Orientada a Objetos
 
 * [Conceito de POO](programacao-orientada-a-objetos/conceito-de-poo.md)
 * [Classes](programacao-orientada-a-objetos/classes.md)
 * [Getters e Setters](programacao-orientada-a-objetos/getters-e-setters.md)
+* [Instânciação](programacao-orientada-a-objetos/instanciacao.md)
+* [UML](programacao-orientada-a-objetos/uml.md)
+* [Pilares do POO](programacao-orientada-a-objetos/pilares-do-poo/README.md)
+  * [Encapsulamento](programacao-orientada-a-objetos/pilares-do-poo/encapsulamento.md)
+  * [Herança](programacao-orientada-a-objetos/pilares-do-poo/heranca.md)
+  * [Abstração](programacao-orientada-a-objetos/pilares-do-poo/abstracao.md)
+  * [Polimorfimo](programacao-orientada-a-objetos/pilares-do-poo/polimorfimo.md)

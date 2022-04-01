@@ -43,7 +43,7 @@ Mas, como sabemos a melhor forma de definir os métodos das nossas classes? Para
 &#x20;Caso o método não retorne nenhum valor, ele será representado pela palavra-chave `void`.&#x20;
 {% endhint %}
 
-1. **Quais os parâmetros serão necessários para execução do método?** Os métodos as vezes precisão de argumentos como critérios para a execução.
+1. **Quais os parâmetros serão necessários para execução do método?** Os métodos as vezes precisam de argumentos como critérios para a execução.
 2. **O método possui o risco de apresentar alguma exceção?** Exceções são comuns na execução de métodos, as vezes é necessário prever e tratar a possível existência de uma exceção.
 3. **Qual a visibilidade do método?** Será necessário que o método seja visível a toda aplicação, somente em mesmo pacotes, através de herança ou somente a nível a própria classe.
 
