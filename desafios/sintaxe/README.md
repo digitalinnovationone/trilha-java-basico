@@ -8,7 +8,8 @@ www.dio.me
 
 Vamos exercitar todo o conteúdo apresentado no módulo de Sintaxe codificando o seguinte cenário.
 
-1. Crie o programa `ContaBanco.java` que receberá dados via terminal contendo as características de conta em banco conforme atributos abaixo:
+1. Crie o projeto `ContaBanco` que receberá dados via terminal contendo as características de conta em banco conforme atributos abaixo:
+2. Dentro do projeto, crie a classe `ContaTerminal.java` para realizar toda a codificação do nosso programa.
 
 ###### Revise sobre regras de declaração de variáveis
 
