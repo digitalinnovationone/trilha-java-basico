@@ -24,7 +24,7 @@ Observe que nosso projeto Java criado por um IDE, ele terá uma pasta chamada **
 
 Mesmo usando uma IDE, nós sempre precisaremos identificar aonde se encontram as classes do nosso projeto, no meu caso está em: **C:\estudos\dio-trilha-java-basico\java-terminal.**
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 ## Terminal
 

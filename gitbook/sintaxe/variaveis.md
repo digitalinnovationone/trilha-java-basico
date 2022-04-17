@@ -42,6 +42,8 @@ _O ponto mais relevante em compreender a definição dos tipos de dados é o mom
 
 {% endhint %}
 
+![Tabela criada pela minha aluna Priscilla Aniboleti - Github - Pripii](<../.gitbook/assets/image (10).png>)
+
 ## Declaração de Variáveis
 
 Variável é uma identificação de um espaço em memória utilizado pelo nosso programa. Seguindo as convenções em linguagem de programação, toda variável é composta por: tipo de dados + identificação + valor atribuído.

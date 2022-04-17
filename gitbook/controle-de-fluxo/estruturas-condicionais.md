@@ -6,7 +6,7 @@ A Estrutura Condicional possibilita a escolha de um grupo de ações e comportam
 
 Quando ocorre uma validação de execução de fluxo somente quando a condição for positiva, consideramos como uma estrutura **Simples**, exemplo:
 
-![](<../.gitbook/assets/image (6) (1).png>)
+![](<../.gitbook/assets/image (6) (1) (1).png>)
 
 ```java
 // CaixaEletronico.java
@@ -27,7 +27,7 @@ public class CaixaEletronico {
 
 ## Condicionais Composta
 
-Algumas vezes o nosso programa deverá seguir mais de uma jornada de execução condionado a uma regra de negócio, este cenário é demoninado **Estrutura Composto**. Vejamos o exemplo abaixo:
+Algumas vezes o nosso programa deverá seguir mais de uma jornada de execução condionado a uma regra de negócio, este cenário é demoninado **Estrutura Condicional Composta**. Vejamos o exemplo abaixo:
 
 ![](../.gitbook/assets/if-else.png)
 

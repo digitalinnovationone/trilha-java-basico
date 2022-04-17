@@ -20,6 +20,10 @@ Antes de escolhar sua IDE super recomendamos realizar uma pesquisa e ter uma exp
 
 O [Eclipse IDE](https://www.eclipse.org/downloads/) é uma alternativa muita comum de encontrar ambientes de desenvolvimento, principalmente pelo aspecto de uma interface simples, plugins para recursos adicionais, atalhos para operações de menu e de escrita e para quem trabalhar com Java Swing você pode adicionar o plugin [WindowBuilder](https://www.eclipse.org/windowbuilder/download.php) que de dispõe de  uma interface gráfica para criar as telas gerando o código de layout para o desenvolvedor.
 
+{% hint style="warning" %}
+Se houver algum erro quanto a versão do Java no Eclipse, [veja o vídeo pelo link](https://www.youtube.com/watch?v=CgwpdheXvls)
+{% endhint %}
+
 ## IntelliJ
 
 O [IntelliJ](https://www.jetbrains.com/pt-br/idea/) é uma plataforma de código aberto para criação de IDEs e ferramentas para desenvolvedores, mas nem todos os recursos estão disponíveis de forma gratuita.
