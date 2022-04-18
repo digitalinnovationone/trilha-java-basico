@@ -18,3 +18,32 @@ O sistema deverá receber dois parâmetros via terminal que representarão dois 
 2. Dentro do projeto, crie a classe `Contador.java` para realizar toda a codificação do nosso programa.
 3. Dentro do projeto, crie a classe `ParametrosInvalidosException` que representará a exceção de negócio no sistema. 
 
+Abaixo temos um trecho que código no qual você poderá seguir alterando as partes que contenham `??`
+
+```java
+public class Contador {
+	public static void main(String[] args) {
+		Scanner terminal = ??;
+		
+		int parametroUm = terminal.??;
+		int parametroDois = terminal.??;
+		
+		try {
+			//chamando o método contendo a lógica de contagem
+			contar(parametroUm, parametroDois);
+		
+		}catch (? exception) {
+			//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
+		}
+		
+	}
+	static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
+		//validar se parametroUm é MAIOR que parametroDois e lançar a exceção
+		
+		int contagem = parametroDois - parametroUm;
+		//realizar o for para imprimir os números com base na variável contagem
+	}
+}
+```
+
+
