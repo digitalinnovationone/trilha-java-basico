@@ -11,8 +11,8 @@ Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma
 
 Lançamento iPhone 2007
 
-Minutos relevantes do 00:15 até 00:55
-Comportamentos esperados:
-Repodutor Musicial: tocar, pausar, selecionarMusica
-Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
+Minutos relevantes do 00:15 até 00:55 </br>
+Comportamentos esperados: </br>
+Repodutor Musicial: tocar, pausar, selecionarMusica </br>
+Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz </br>
 Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
