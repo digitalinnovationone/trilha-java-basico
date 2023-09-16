@@ -8,11 +8,15 @@
 
 ## Sobre
 
-<!-- Inserir asset/DIagramacaoClassesIphone.drawio.png -->
-
 ![alt text](./assets/DiagramacaoClassesIphone.drawio.png "UML Diagram")
-
 Envio para desafio de modelagem e diagramação da representação em UML e Código no que se refere ao componente iPhone.
+
+| ClassesDoIphone |||
+| - | - | - |
+| + iTunes | + Phone | + Safari |
+| # play | # call | # viewInternetPage |
+| # pause | # answer | # refreshInternetPage |
+| # selectMusic | # voiceCall | # addNewTab |
 
 ## POO - Desafio
 
@@ -21,9 +25,3 @@ Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma
 [Lançamento iPhone 2007](https://www.youtube.com/watch?v=9ou608QQRq8)
 
 - Minutos relevantes do 00:15 até 00:55
-
-### Comportamentos esperados
-
-- Repodutor Musicial: tocar, pausar, selecionarMusica
-- Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
-- Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina

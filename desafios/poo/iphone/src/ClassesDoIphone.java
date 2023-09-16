@@ -10,7 +10,7 @@ import java.util.Collection;
  */
 public class ClassesDoIphone {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
     }
 
     /**
@@ -18,173 +18,16 @@ public class ClassesDoIphone {
      * 
      * @param title required String
      */
-    public class Music {
+    private class Music {
         protected String title;
-        protected String artist;
-        protected String album;
 
         /**
          * Constructor for Music
          * 
-         * @param title  required String
-         * @param artist required String
-         * @param album  required String
-         */
-        public Music(String title, String artist, String album) {
-            this.title = title;
-            this.artist = artist;
-            this.album = album;
-        }
-    }
-
-    /**
-     * Class MusicAlbum is a collection of music with common metadata
-     * 
-     * @param tracks required Collection<Music>
-     * @param title  required String
-     * @param artist required String
-     */
-    public class MusicAlbum {
-        private Collection<Music> tracks;
-        protected String title;
-        protected String artist;
-
-        /**
-         * Constructor for MusicAlbum
-         * 
-         * @param tracks required Collection<Music>
-         * @param title  required String
-         * @param artist required String
-         * @return MusicAlbum
-         */
-        public MusicAlbum(Collection<Music> tracks, String title, String artist) {
-            this.tracks = tracks;
-            this.title = title;
-            this.artist = artist;
-        }
-
-        /**
-         * Method to get tracks
-         * 
-         * @return Collection<Music>
-         */
-        public Collection<Music> getTracks() {
-            return this.tracks;
-        }
-
-        /**
-         * Method to set tracks
-         * 
-         * @param tracks required Collection<Music>
-         */
-        public void setTracks(Collection<Music> tracks) {
-            this.tracks = tracks;
-        }
-
-        /**
-         * Method to add track to album
-         * 
-         * @param track required Music
-         * @return MusicAlbum
-         */
-        public MusicAlbum addTrack(Music track) {
-            this.tracks.add(track);
-            return this;
-        }
-
-        /**
-         * Method to remove track from album
-         * 
-         * @param track required Music
-         * @return MusicAlbum
-         */
-        public MusicAlbum removeTrack(Music track) {
-            this.tracks.remove(track);
-            return this;
-        }
-
-        /**
-         * Method to get title
-         * 
-         * @return String
-         */
-        public String getTitle() {
-            return this.title;
-        }
-
-        /**
-         * Method to set title
-         * 
          * @param title required String
          */
-        public void setTitle(String title) {
+        private Music(String title, String artist, String album) {
             this.title = title;
-        }
-
-        /**
-         * Method to get artist
-         * 
-         * @return String
-         */
-        public String getArtist() {
-            return this.artist;
-        }
-
-        /**
-         * Method to set artist
-         * 
-         * @param artist required String
-         */
-        public void setArtist(String artist) {
-            this.artist = artist;
-        }
-    }
-
-    /**
-     * Class MusicLibrary is a collection of music albums
-     * 
-     * @param albums required Collection<MusicAlbum>
-     * @see MusicAlbum
-     * @see Music
-     */
-    public class MusicLibrary {
-        private Collection<MusicAlbum> albums;
-
-        /**
-         * Constructor for MusicLibrary
-         * 
-         * @param albums required Collection<MusicAlbum>
-         * @return MusicLibrary
-         */
-        public MusicLibrary(Collection<MusicAlbum> albums, Collection<Music> tracks) {
-            this.albums = albums;
-        }
-
-        /**
-         * Method to get albums
-         * 
-         * @return Collection<MusicAlbum>
-         */
-        public Collection<MusicAlbum> getAlbums() {
-            return this.albums;
-        }
-
-        /**
-         * Method to add an album to the library
-         * 
-         * @param albums required Collection<MusicAlbum>
-         */
-        public void addAlbum(MusicAlbum album) {
-            this.albums.add(album);
-        }
-
-        /**
-         * Method to remove an album from the library
-         * 
-         * @param albums required Collection<MusicAlbum>
-         */
-        public void removeAlbum(MusicAlbum album) {
-            this.albums.remove(album);
         }
     }
 
@@ -202,25 +45,30 @@ public class ClassesDoIphone {
     }
 
     /**
-     * Class ITunesApp is an app that plays music and implements MediaPlayer
+     * Class iTunes implements MediaPlayer
+     * 
+     * @param currentMusic required Music
+     * @param isPlaying    required boolean
+     * @see MediaPlayer
+     * @see Music
      */
-    public class ITunesApp implements MediaPlayer {
+    public class iTunes implements MediaPlayer {
+        private Music currentMusic = null;
         private boolean isPlaying = false;
-        private Music playingNow = null;
 
         /**
-         * Method to play music receives music as parameter
+         * Method to play music
          * 
          * @param music required Music
          */
         @Override
-        public void play(ClassesDoIphone.Music music) {
+        public void play(Music music) {
             if (this.isPlaying) {
                 this.pause();
             }
+            this.currentMusic = music;
             this.isPlaying = true;
-            this.playingNow = music;
-            System.out.println("Playing " + music.title);
+            System.out.println("Playing " + this.currentMusic.title + "...");
         }
 
         /**
@@ -233,15 +81,14 @@ public class ClassesDoIphone {
         }
 
         /**
-         * Method to select music receives music as parameter
+         * Method to select music
          * 
          * @param music required Music
+         * @see Music
          */
         @Override
-        public void selectMusic(ClassesDoIphone.Music music) {
-            if (this.isPlaying) {
-                this.pause();
-            }
+        public void selectMusic(Music music) {
+            this.currentMusic = music;
             this.play(music);
         }
     }
@@ -250,132 +97,16 @@ public class ClassesDoIphone {
      * Class Contact is an object with required name and phone number
      * 
      */
-    public class Contact {
-        protected String name;
+    private class Contact {
         protected String phoneNumber;
 
         /**
          * Constructor for Contact
          * 
-         * @param name        required String
          * @param phoneNumber required String
          */
-        public Contact(String name, String phoneNumber) {
-            this.name = name;
+        private Contact(String name, String phoneNumber) {
             this.phoneNumber = phoneNumber;
-        }
-
-        /**
-         * Method to get name
-         * 
-         * @return String
-         */
-        public String getName() {
-            return this.name;
-        }
-
-        /**
-         * Method to set name
-         * 
-         * @param name required String
-         */
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        /**
-         * Method to get phone number
-         * 
-         * @return String
-         */
-        public String getPhoneNumber() {
-            return this.phoneNumber;
-        }
-
-        /**
-         * Method to set phone number
-         * 
-         * @param phoneNumber required String
-         */
-        public void setPhoneNumber(String phoneNumber) {
-            this.phoneNumber = phoneNumber;
-        }
-    }
-
-    /**
-     * Class ContactList is a collection of contacts
-     * 
-     * @param contacts required Collection<Contact>
-     * @see Contact
-     */
-    public class ContactList {
-        private Collection<Contact> contacts;
-
-        /**
-         * Constructor for ContactList
-         * 
-         * @param contacts required Collection<Contact>
-         * @return ContactList
-         */
-        public ContactList(Collection<Contact> contacts) {
-            this.contacts = contacts;
-        }
-
-        /**
-         * Method to get contacts
-         * 
-         * @return Collection<Contact>
-         */
-        public Collection<Contact> getContacts() {
-            return this.contacts;
-        }
-
-        /**
-         * Method to add a contact to the list
-         * 
-         * @param contact required Contact
-         */
-        public void addContact(Contact contact) {
-            this.contacts.add(contact);
-        }
-
-        /**
-         * Method to remove a contact from the list
-         * 
-         * @param contact required Contact
-         */
-        public void removeContact(Contact contact) {
-            this.contacts.remove(contact);
-        }
-
-        /**
-         * Method to search for a contact by name
-         * 
-         * @param name required String
-         * @return Contact
-         */
-        public Contact searchContactByName(String name) {
-            for (Contact contact : this.contacts) {
-                if (contact.name.equals(name)) {
-                    return contact;
-                }
-            }
-            return null;
-        }
-
-        /**
-         * Method to search for a contact by phone number
-         * 
-         * @param phoneNumber required String
-         * @return Contact
-         */
-        public Contact searchContactByPhoneNumber(String phoneNumber) {
-            for (Contact contact : this.contacts) {
-                if (contact.phoneNumber.equals(phoneNumber)) {
-                    return contact;
-                }
-            }
-            return null;
         }
     }
 
@@ -396,7 +127,7 @@ public class ClassesDoIphone {
      * Class PhoneApp is an app that makes and receives calls and implements
      * PhoneCall
      */
-    public class PhoneApp implements PhoneCall {
+    public class Phone implements PhoneCall {
         private boolean isCalling = false;
         private Contact caller = null;
 
@@ -406,7 +137,7 @@ public class ClassesDoIphone {
                 this.voiceMail();
             }
             this.isCalling = true;
-            System.out.println("Calling " + this.caller.name + "...");
+            System.out.println("Calling " + this.caller.phoneNumber + "...");
         }
 
         @Override
@@ -415,14 +146,117 @@ public class ClassesDoIphone {
                 this.voiceMail();
             }
             this.isCalling = true;
-            System.out.println(this.caller.name + " is calling...");
+            System.out.println(this.caller.phoneNumber + " is calling...");
         }
 
         @Override
         public void voiceMail() {
             this.isCalling = false;
-            System.out.println("Voice mail from " + this.caller.name);
+            System.out.println("Voice mail from " + this.caller.phoneNumber);
         }
     }
 
+    /**
+     * Class InternetPage is an object with required URI String and isLoaded boolean
+     * 
+     * @param uri      required String
+     * @param isLoaded required boolean
+     */
+    private class InternetPage {
+        protected String uri;
+        protected boolean isLoaded;
+
+        /**
+         * Constructor for InternetPage
+         * 
+         * @param uri      required String
+         * @param isLoaded required boolean
+         */
+        private InternetPage(String uri, boolean isLoaded) {
+            this.uri = uri;
+            this.isLoaded = isLoaded;
+        }
+
+        /**
+         * Method to get isLoaded method
+         */
+        public boolean getIsLoaded() {
+            return this.isLoaded;
+        }
+
+        /**
+         * Method to set isLoaded method
+         * 
+         * @param isLoaded required boolean
+         */
+        public void setIsLoaded(boolean isLoaded) {
+            this.isLoaded = isLoaded;
+        }
+    }
+
+    /**
+     * Interface InternetBrowser contains the methods to navigate the internet
+     */
+    public interface InternetBrowser {
+        public void viewInternetPage(String uri);
+
+        public void refreshInternetPage();
+    }
+
+    /**
+     * Class Safari is an app that navigates the internet and implements
+     * InternetBrowser and tabs
+     */
+    public class Safari implements InternetBrowser {
+        private Collection<InternetPage> tabs;
+        private InternetPage currentTab = null;
+
+        /**
+         * Constructor for Safari
+         * 
+         * @param tabs required Collection<InternetPage>
+         * @return Safari
+         */
+        public Safari(Collection<InternetPage> tabs) {
+            this.tabs = tabs;
+        }
+
+        /**
+         * AddNewTab is a method to add a tab to the browser
+         * 
+         * @param uri String or null
+         */
+        public void AddNewTab(String uri) {
+            if (uri == null) {
+                this.tabs.add(new InternetPage("about:blank", false));
+            } else {
+                this.tabs.add(new InternetPage(uri, false));
+            }
+            System.out.println("New tab added");
+        }
+
+        /**
+         * viewInternetPage is a method to view a page in the browser
+         * 
+         * @param uri String
+         */
+        @Override
+        public void viewInternetPage(String uri) {
+            this.currentTab = new InternetPage(uri, true);
+            System.out.println("Viewing " + this.currentTab.uri + "...");
+        }
+
+        /**
+         * refreshInternetPage is a method to refresh the current page
+         */
+        @Override
+        public void refreshInternetPage() {
+            if (this.currentTab == null) {
+                throw new NullPointerException("No page to refresh");
+            } else {
+                this.currentTab.setIsLoaded(false);
+                System.out.println("Refreshing " + this.currentTab.uri + "...");
+            }
+        }
+    }
 }
