@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/layo/digital-innovation/trilha-java-basico/codigo-fonte/tipos-variaveis/src</OriginalElement>
+  <nodes>
+    <node x="-93.42942681264844" y="-21.81582505745078">service.Telephone</node>
+    <node x="205.92415468487368" y="-21.81582505745078">service.InternetBrowser</node>
+    <node x="542.2180006029297" y="-21.815825057450773">service.MusicPlayer</node>
+    <node x="187.6921690351764" y="155.8362873980203">service.impl.Iphone</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.impl.Iphone" target="service.MusicPlayer" relationship="REALIZATION">
+      <point x="111.61552327251587" y="1.2021741404412296" />
+      <point x="646.6666232805915" y="292.03846153846155" />
+      <point x="646.6666232805915" y="80.18950869816138" />
+      <point x="-100.0" y="48.00533375561215" />
+    </edge>
+    <edge source="service.impl.Iphone" target="service.Telephone" relationship="REALIZATION">
+      <point x="-107.0" y="0.0" />
+      <point x="13.570573187351556" y="290.8362873980203" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="service.impl.Iphone" target="service.InternetBrowser" relationship="REALIZATION">
+      <point x="-0.7680143503027068" y="-135.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.64" showDependencies="false" x="328.1826923076924" y="224.5625" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
