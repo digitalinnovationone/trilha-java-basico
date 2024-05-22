@@ -4,5 +4,7 @@ public class TiposVariaveis {
       short  numero2=numero1;
       numero1 = (byte) numero2;
       System.out.println(numero1);
+      double salarioMinimo = 1000;
+
     }
 }
