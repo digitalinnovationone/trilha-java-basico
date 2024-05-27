@@ -1,7 +1,5 @@
 # Desafio: Modelagem UML e Implementação do Componente iPhone
 
-Local do Desafio: desafios/poo/exercicio-gabriel
-
 ## Descrição do Desafio
 
 Este Desafio tem como objetivo realizar a modelagem e diagramação da representação em UML (Unified Modeling Language) e implementação em código Java do componente iPhone. O componente iPhone foi dividido em três principais papéis: Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Cada papel tem comportamentos específicos associados a ele.
