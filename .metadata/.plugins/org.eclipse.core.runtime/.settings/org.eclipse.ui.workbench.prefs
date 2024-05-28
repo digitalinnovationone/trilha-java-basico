@@ -1,0 +1,6 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=37,41,45
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=37,41,45
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=53,60,65
