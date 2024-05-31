@@ -59,6 +59,32 @@ classDiagram
 3. Opcionalmente, caso esteja cheio(a) de confiança, pode implementar as classes Java representadas em seu diagrama UML.
 4. Submeta seu repositório GitHub conforme as orientações da plataforma DIO. Por exemplo:
 
-```bash
-https://github.com/glysns/trilha-java-basico/desafios/poo/README.md
-```` 
+### Solução
+```mermaid
+classDiagram
+
+class Iphone
+
+
+class  ReprodutorMusical
+<<interface>> ReprodutorMusical
+ReprodutorMusical : +tocar()
+ReprodutorMusical : +pausar()
+ReprodutorMusical : +selecionarMusica(String musica)
+
+class AparelhoTelefonico
+<<interface>> AparelhoTelefonico
+AparelhoTelefonico: +ligar(String numero)
+AparelhoTelefonico : +atender()
+AparelhoTelefonico : +iniciarCorreioVoz()
+
+class NavegadorNaInternet
+<<interface>> NavegadorNaInternet
+NavegadorNaInternet : +exibirPagina(String url)
+NavegadorNaInternet : +adicionarNovaAba()
+NavegadorNaInternet : +atualizarPagina()
+
+Iphone "1" --> "*" NavegadorNaInternet : Implementa
+Iphone "1" --> "1" AparelhoTelefonico : Implementa
+Iphone "1" --> "*" ReprodutorMusical : Implementa
+```
