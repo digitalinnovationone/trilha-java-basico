@@ -23,3 +23,6 @@
 hs_err_pid*
 /.vscode
 settings.json
+
+# 
+.apresentacoes
