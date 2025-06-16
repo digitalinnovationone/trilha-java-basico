@@ -2,6 +2,7 @@
 
 ## Autores
 - [Gleyson Sampaio](https://github.com/glysns)
+- [Guilherme Messias Silva](https://github.com/guilherdrk)
 
 ## POO - Desafio
 
@@ -30,27 +31,45 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 ### Exemplo de Diagrama UML (Mermaid)
 ```mermaid
 classDiagram
+    %% Interfaces
     class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        <<interface>>
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        <<interface>>
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
     }
 
     class NavegadorInternet {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+        <<interface>>
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
 
+    %% Classe concreta
     class iPhone {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone ..|> ReprodutorMusical
+    iPhone ..|> AparelhoTelefonico
+    iPhone ..|> NavegadorInternet
+
 ```
 
 ### Instruções
